@@ -11,7 +11,7 @@ export class ProductListComponent implements OnInit {
   imageWidth: number = 50;
   imageMargin: number = 2;
   showImage: boolean = false;
-  imgBaseUrl:string ="https://github.com/yadavrajesh003/Angular-Part-6-Building-nested-components-pwcui9/blob/master/src/";
+  imgBaseUrl:string ="https://cdn.jsdelivr.net/gh/yadavrajesh003/Angular-Part-6-Building-nested-components-pwcui9@master/src/";
 
   _listFilter: string;
   get listFilter(): string {
