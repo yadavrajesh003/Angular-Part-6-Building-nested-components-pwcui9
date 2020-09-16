@@ -11,6 +11,7 @@ export class ProductListComponent implements OnInit {
   imageWidth: number = 50;
   imageMargin: number = 2;
   showImage: boolean = false;
+  imgBaseUrl:string ="https://github.com/yadavrajesh003/Angular-Part-6-Building-nested-components-pwcui9/blob/master/src/";
 
   _listFilter: string;
   get listFilter(): string {
@@ -31,7 +32,7 @@ export class ProductListComponent implements OnInit {
       "description": "15 gallon capacity rolling garden cart",
       "price": 32.99,
       "starRating": 4.2,
-      "imageUrl": "assets/images/garden_cart.png"
+      "imageUrl": this.imgBaseUrl+ "assets/images/garden_cart.png"
     },
     {
       "productId": 5,
@@ -41,7 +42,7 @@ export class ProductListComponent implements OnInit {
       "description": "Curved claw steel hammer",
       "price": 8.9,
       "starRating": 4.8,
-      "imageUrl": "assets/images/hammer.png"
+      "imageUrl": this.imgBaseUrl + "assets/images/hammer.png"
     }
   ];
 
